@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TIC TAC TOE from harish</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="title">TIC TAC TOE</div>
+    <div class="score">Player:<span class="playerScore">0</span> Computer:<span class="computerScore">0</span></div>
+    <div class="tictactoe-board">
+      <script>
+        for (var i = 0; i < 3; i++) {
+          document.write('<div class="board-row">');
+          for (var j = 0; j < 3; j++) {
+            document.write('<div class="board-cell cell-');
+            document.write(i + '-' + j);
+            document.write('">' + '&nbsp' + '</div>');
+          }
+          document.write('</div>');
+        }
+      </script>
+    </div>
+    <div class="message">Message: <span class="message-text">&nbsp;</span></div>
+    <div class="author-name">Game by : Harish C Jingade</div>
+  </body>
+</html>
